@@ -1,0 +1,16 @@
+<h2 class="container"> Planets</h2>
+
+<div class="container mx-auto mt-4" >
+  <div class="row">
+      <div class="col-md-4 mb-2 mt-2" *ngFor="let planet of planets?.results">
+          <div class="card " style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title" > {{ planet?.name}} </h5>
+                <h6 class="card-subtitle mb-2 text-muted" >Population : {{ planet?.population }}</h6>
+                <p class="card-text" > Surface : {{ planet?.surface }}</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
